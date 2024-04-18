@@ -19,11 +19,27 @@ body {
     height: 100vh;
     width: 100vw;
     box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 10fr;
+    grid-template-areas: 
+            "header header"
+            "aside main";
+}
+
+header {
+    grid-area: header;
+}
+
+aside {
+    grid-area: aside;
+}
+
+main {
+    grid-area: main;
 }
 
 .cabecalho {
-    height: 10%;
-    width: 100%;
     display: flex;
     flex-direction: row;
 }
@@ -31,7 +47,7 @@ body {
 .cabecalho__caixa-nome {
     background-color: var(--terciario);
     height: 100%;
-    width: 18%;
+    width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,3 +88,41 @@ body {
     text-decoration: none;
     color: var(--branco-principal);
 }
+
+.sidebar {
+    background-color: var(--branco-principal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar__caminho {
+    font-family: "Yaldevi", sans-serif;
+    padding: 6% 0;
+    font-size: 12px;
+}
+
+.sidebar__nav__lista {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar__nav__lista__item {
+    font-family: "Yaldevi", sans-serif;
+    padding: 15% 0;
+}
+
+.sidebar__nav__lista__item__link {
+    text-decoration: none;
+    color: var(--preto--principal);
+} 
+
+.principal {
+    background-color: var(--cor-de-fundo);
+}
+
+
+
+
