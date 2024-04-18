@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Yaldevi:wght@200..700&display=swap');
+
+:root {
+    --branco-principal: #F5F3F5;
+    --preto--principal: #302B27;
+    --primario : #576CA8 ;
+    --secundario: #274690;
+    --terciario: #1B264F;
+    --cor-de-fundo: #E2E6F2;
+}
+
+* {
+    margin: 0;    
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.cabecalho__caixa-nome {
+    background-color: var(--terciario);
+    height: 100%;
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho__caixa-nome__nome {
+    font-family: "Yaldevi", sans-serif;
+    color: var(--branco-principal);
+    font-weight: 300;
+}
+
+.cabecalho__caixa-nav {
+    background-color: var(--primario);
+    height: 100%;
+    width: 100%;
+}
+
+.cabecalho__caixa-nav__nav {
+    height: 100%;
+}
+
+.cabecalho__caixa-nav__nav__lista {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+
+.cabecalho__caixa-nav__nav__lista__item {
+    font-family: "Yaldevi", sans-serif;
+    padding: 0 2%;
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho__caixa-nav__nav__lista__item__link {
+    text-decoration: none;
+    color: var(--branco-principal);
+}
