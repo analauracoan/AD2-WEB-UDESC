@@ -6,33 +6,35 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width-device-width, initial-scale=1">
         <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/pacientes_ativos.css">
+        <link rel="stylesheet" href="css/home.css">
     </head>
 
     <body>
 
         <header class="cabecalho">
             <div class="cabecalho__caixa-nome">
-                <h4 class="cabecalho__caixa-nome__nome">
-                    Consultório <b>Priscila Oliver</b>
-                </h4>
+                <a href="#" class="cabecalho__caixa-nome__link">
+                    <h4 class="cabecalho__caixa-nome__link__nome">
+                        Consultório <b>Priscila Oliver</b>
+                    </h4>
+                </a>
             </div>
             <div class="cabecalho__caixa-nav">
                 <nav class="cabecalho__caixa-nav__nav">
                     <ul class="cabecalho__caixa-nav__nav__lista">
                         <li class="cabecalho__caixa-nav__nav__lista__item">
-                            <a href="#" class="cabecalho__caixa-nav__nav__lista__item__link">
-                                Agenda
-                            </a>
-                        </li>
-                        <li class="cabecalho__caixa-nav__nav__lista__item">
-                            <a href="#" class="cabecalho__caixa-nav__nav__lista__item__link">
+                            <a href="pages/pacientes_analaura/listagem_pacientes.html" class="cabecalho__caixa-nav__nav__lista__item__link">
                                 Pacientes
                             </a>
                         </li>
                         <li class="cabecalho__caixa-nav__nav__lista__item">
                             <a href="#" class="cabecalho__caixa-nav__nav__lista__item__link">
-                                Prontuários
+                                Anamnese
+                            </a>
+                        </li>
+                        <li class="cabecalho__caixa-nav__nav__lista__item">
+                            <a href="#" class="cabecalho__caixa-nav__nav__lista__item__link">
+                                Tratamento
                             </a>
                         </li>
                         <li class="cabecalho__caixa-nav__nav__lista__item">
@@ -42,7 +44,7 @@
                         </li>
                         <li class="cabecalho__caixa-nav__nav__lista__item">
                             <a href="#" class="cabecalho__caixa-nav__nav__lista__item__link">
-                                Estoque
+                                Usuários
                             </a>
                         </li>
                     </ul>
@@ -52,81 +54,44 @@
 
         <aside class="sidebar">
             <p class="sidebar__caminho">
-                Página inicial > Pacientes
+                Home
             </p>
-            <nav class="sidebar__nav">
-                <ul class="sidebar__nav__lista">
-                    <li class="sidebar__nav__lista__item">
-                         <a href="#" class="sidebar__nav__lista__item__link">
-                            Últimos acessos
-                         </a>
-                    </li>
-                    <li class="sidebar__nav__lista__item">
-                        <a href="#" class="sidebar__nav__lista__item__link">
-                           Pacientes ativos
-                        </a>
-                   </li>
-                   <li class="sidebar__nav__lista__item">
-                        <a href="#" class="sidebar__nav__lista__item__link">
-                            Pacientes arquivados
-                        </a>
-                    </li>
-                    <li class="sidebar__nav__lista__item">
-                        <a href="#" class="sidebar__nav__lista__item__link">
-                            Cadastrar novo paciente
-                        </a>
-                    </li>
-                </ul>
-            </nav>
         </aside>
 
         <main class="principal">
-            <section class="principal__pacientes-ativos">
-                <h1 class="principal__pacientes-ativos__titulo">
-                    Pacientes
-                </h1>
-                <h3 class="principal__pacientes-ativos__subtitulo">
-                    Ativos
-                </h3>
-                <div class="principal__pacientes-ativos__card">
-                    <div class="principal__pacientes-ativos__card__separador">
-                        <img src="images/foto_perfil.png" alt="Foto de perfil do paciente" class="principal__pacientes-ativos__card__foto"/>
-                        <div class="principal__pacientes-ativos__card__infos">
-                            <h4 class="principal__pacientes-ativos__card__infos__nome">
+            <h1 class="principal__titulo">
+                Seja bem-vindo(a) ao sistema OdontoÁgil!
+            </h1>
+            <h3 class="principal__subtitulo">
+                Clique em um dos itens da barra de navegação para ver tudo que o nosso sistema oferece!
+            </h3>  
+            <p class="principal__texto">
+                Para a realização deste trabalho, a divisão de execução das páginas foi a seguinte:
+            </p>  
+            <div class="principal__caixa">            
+                <table class="principal__caixa__tabela">
+                    <thead>
+                        <tr class="principal__caixa__tabela__linha">
+                            <th class="principal__caixa__tabela__linha__header">
+                                Integrante
+                            </th>
+                            <th class="principal__caixa__tabela__linha__header">
+                                Atividade designada
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="principal__caixa__tabela__linha">
+                            <td class="principal__caixa__tabela__linha__dado">
                                 Ana Laura Coan
-                            </h4>
-                            <div class="principal__pacientes-ativos__card__infos__adicionais">
-                                <p class="principal__pacientes-ativos__card__infos__adicionais__idade">
-                                    <b>Idade: </b>21 anos
-                                </p>
-                                <p class="principal__pacientes-ativos__card__infos__adicionais__sexo">
-                                    <b>Sexo: </b>feminino
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="principal__pacientes-ativos__card__botoes">
-                        <div class="principal__pacientes-ativos__card__botao botao-prontuario">
-                            <img src="images/icone_prontuario.png" alt="Ícone de prontuário" class="principal__pacientes-ativos__card__botao__icone"/>
-                            <p class="principal__pacientes-ativos__card__botao__texto">
-                                Prontuário
-                            </p>
-                        </div>
-                        <div class="principal__pacientes-ativos__card__botao botao-editar">
-                            <img src="images/icone_editar.png" alt="Ícone de edição" class="principal__pacientes-ativos__card__botao__icone"/>
-                            <p class="principal__pacientes-ativos__card__botao__texto">
-                                Editar
-                            </p>
-                        </div>
-                        <div class="principal__pacientes-ativos__card__botao botao-remover">
-                            <img src="images/icone_remover.png" alt="Ícone de remoção" class="principal__pacientes-ativos__card__botao__icone"/>
-                            <p class="principal__pacientes-ativos__card__botao__texto">
-                                Remover
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                            </td>
+                            <td class="principal__caixa__tabela__linha__dado">
+                                3 páginas: Home, Listagem de Pacientes e Cadastro de Pacientes
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </main>
 
         <footer></footer>

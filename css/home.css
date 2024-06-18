@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Yaldevi:wght@200..700&display=swap');
+
+.principal {
+    padding: 2%;
+}
+
+.principal__titulo {
+    font-family: "Yaldevi", sans-serif;
+    padding: 2% 0 2% 4%;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.principal__subtitulo {
+    font-family: "Yaldevi", sans-serif;
+    padding: 0 0 2% 4%;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.principal__texto {
+    font-family: "Yaldevi", sans-serif;
+    padding: 0 0 2% 4%;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.principal__caixa {
+    display: flex;
+    justify-content: center;
+}
+
+.principal__caixa__tabela, .principal__caixa__tabela__linha__header, .principal__caixa__tabela__linha__dado {
+    font-family: "Yaldevi", sans-serif;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid rgb(160 160 160);
+}
+
+.principal__caixa__tabela__linha__header {
+    background-color: lightgray;
+}

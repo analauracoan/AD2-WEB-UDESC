@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Yaldevi:wght@200..700&display=swap');
 
-.principal__pacientes-ativos__titulo {
+.principal__listar-pacientes__titulo {
     font-family: "Yaldevi", sans-serif;
     padding: 2% 0 0 4%;
     font-size: 40px;
     font-weight: 600;
 }
 
-.principal__pacientes-ativos__subtitulo {
+.principal__listar-pacientes__subtitulo {
     font-family: "Yaldevi", sans-serif;
     padding: 0 0 2% 4%;
     font-size: 20px;
     font-weight: 200;
 }
 
-.principal__pacientes-ativos__card {
+.principal__listar-pacientes__card {
     background-color: var(--branco-principal);
     height: 5%;
     margin: 1% 2%;
@@ -25,25 +25,25 @@
     justify-content: space-between;
 }
 
-.principal__pacientes-ativos__card__separador {
+.principal__listar-pacientes__card__separador {
     width: 100%;
     display: flex;
     flex-direction: row;
 }
 
-.principal__pacientes-ativos__card__foto {
+.principal__listar-pacientes__card__foto {
     width: 6%;
     margin: 0 2%;
 }
 
-.principal__pacientes-ativos__card__infos__nome {
+.principal__listar-pacientes__card__infos__nome {
     font-family: "Yaldevi", sans-serif;
     color: var(--preto-principal);
     font-size: 20px;
     margin-bottom: 4%;
 }
 
-.principal__pacientes-ativos__card__infos__adicionais {
+.principal__listar-pacientes__card__infos__adicionais {
     display: flex;
     flex-direction: row;
     gap: 30px;
@@ -52,14 +52,14 @@
     font-size: 14px;
 }
 
-.principal__pacientes-ativos__card__botoes {
+.principal__listar-pacientes__card__botoes {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 20%;
 }
 
-.principal__pacientes-ativos__card__botao {
+.principal__listar-pacientes__card__botao {
     width: 30%;
     height: 100%;
     border-radius: 10px;
@@ -81,7 +81,7 @@
     background-color: #EA5555;
 }
 
-.principal__pacientes-ativos__card__botao__texto {
+.principal__listar-pacientes__card__botao__texto {
     font-family: "Yaldevi", sans-serif;
     color: var(--preto-principal);
     font-size: 10px;

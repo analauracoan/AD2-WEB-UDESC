@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <title>Consultório</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/pacientes_analaura/cadastrar_paciente.css">
+    </head>
+
+    <body>
+
+        <header class="cabecalho">
+            <div class="cabecalho__caixa-nome">
+                <a href="../../index.html" class="cabecalho__caixa-nome__link">
+                    <h4 class="cabecalho__caixa-nome__link__nome">
+                        Consultório <b>Priscila Oliver</b>
+                    </h4>
+                </a>
+            </div>
+            <div class="cabecalho__caixa-nav">
+                <nav class="cabecalho__caixa-nav__nav">
+                    <ul class="cabecalho__caixa-nav__nav__lista">
+                        <li class="cabecalho__caixa-nav__nav__lista__item">
+                            <a href="#" class="cabecalho__caixa-nav__nav__lista__item__link">
+                                Pacientes
+                            </a>
+                        </li>
+                        <li class="cabecalho__caixa-nav__nav__lista__item">
+                            <a href="#" class="cabecalho__caixa-nav__nav__lista__item__link">
+                                Anamnese
+                            </a>
+                        </li>
+                        <li class="cabecalho__caixa-nav__nav__lista__item">
+                            <a href="#" class="cabecalho__caixa-nav__nav__lista__item__link">
+                                Tratamento
+                            </a>
+                        </li>
+                        <li class="cabecalho__caixa-nav__nav__lista__item">
+                            <a href="#" class="cabecalho__caixa-nav__nav__lista__item__link">
+                                Serviços
+                            </a>
+                        </li>
+                        <li class="cabecalho__caixa-nav__nav__lista__item">
+                            <a href="#" class="cabecalho__caixa-nav__nav__lista__item__link">
+                                Usuários
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <aside class="sidebar">
+            <p class="sidebar__caminho">
+                Home > Listar pacientes
+            </p>
+            <nav class="sidebar__nav">
+                <ul class="sidebar__nav__lista">
+                    <li class="sidebar__nav__lista__item">
+                         <a href="#" class="sidebar__nav__lista__item__link">
+                            Listar pacientes
+                         </a>
+                    </li>
+                    <li class="sidebar__nav__lista__item">
+                        <a href="#" class="sidebar__nav__lista__item__link">
+                           Cadastrar paciente
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="principal">
+            <section class="principal__cadastrar-paciente">
+                <h1 class="principal__cadastrar-paciente__titulo">
+                    Cadastrar paciente
+                </h1>
+                <form id="cadastrar-paciente_formulario">
+                    <div class="formulario__caixa-topicos">
+
+                        <p class="formulario__caixa-topicos__titulo">
+                            Dados pessoais
+                        </p>
+                        
+                        <label for="nomeCompleto" class="cadastrar-paciente__formulario__legenda">Nome Completo</label>
+                        <br>
+                        <input type="text" id="nomeCompleto" name="nomeCompleto" class="cadastrar-paciente__formulario__campo" required>
+
+                        <br>
+
+                        <label for="dataNascimento" class="cadastrar-paciente__formulario__legenda">Data de Nascimento</label>
+                        <br>
+                        <input type="date" id="dataNascimento" name="dataNascimento" class="cadastrar-paciente__formulario__campo" required>
+                
+                        <label for="sexo" class="cadastrar-paciente__formulario__legenda">Sexo:</label>
+                        <select id="sexo" name="sexo" required>
+                            <option value="">Selecione</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                        <br>
+                
+                        <label for="cpf" class="cadastrar-paciente__formulario__legenda">CPF:</label>
+                        <input type="text" id="cpf" name="cpf" class="cadastrar-paciente__formulario__campo" required>
+                        <br>
+                
+                        <label for="rg" class="cadastrar-paciente__formulario__legenda">RG:</label>
+                        <input type="text" id="rg" name="rg" class="cadastrar-paciente__formulario__campo" required>
+                        <br>
+
+                        <label for="celular" class="cadastrar-paciente__formulario__legenda">Celular:</label>
+                        <input type="text" id="celular" name="celular" class="cadastrar-paciente__formulario__campo" required>
+                        <br>
+                
+                        <label for="email" class="cadastrar-paciente__formulario__legenda">Email:</label>
+                        <input type="email" id="email" name="email" class="cadastrar-paciente__formulario__campo" required>
+                        <br>
+                    </div>
+            
+                    <div>
+                        <label for="cidade class="cadastrar-paciente__formulario__legenda"">Cidade:</label>
+                        <input type="text" id="cidade" name="cidade" class="cadastrar-paciente__formulario__campo" required>
+                        <br>
+                
+                        <label for="rua" class="cadastrar-paciente__formulario__legenda">Rua:</label>
+                        <input type="text" id="rua" name="rua" class="cadastrar-paciente__formulario__campo" required>
+                        <br>
+                
+                        <label for="uf" class="cadastrar-paciente__formulario__legenda">Unidade Federativa (sigla):</label>
+                        <input type="text" id="uf" name="uf" maxlength="2" class="cadastrar-paciente__formulario__campo" required>
+                        <br>
+                
+                        <label for="cep" class="cadastrar-paciente__formulario__legenda">CEP:</label>
+                        <input type="text" id="cep" name="cep" class="cadastrar-paciente__formulario__campo" required>
+                        <br>
+                    </div>
+            
+                    <div>
+                        <label for="nomePai" class="cadastrar-paciente__formulario__legenda">Nome do Pai:</label>
+                        <input type="text" id="nomePai" name="nomePai" class="cadastrar-paciente__formulario__campo" required>
+                        <br>
+                
+                        <label for="nomeMae" class="cadastrar-paciente__formulario__legenda">Nome da Mãe:</label>
+                        <input type="text" id="nomeMae" name="nomeMae" class="cadastrar-paciente__formulario__campo" required>
+                        <br>
+                    </div>
+
+                    <button type="submit">Cadastrar paciente</button>
+                </form>
+            </section>
+        </main>
+
+        <footer></footer>
+
+    </body>
+
+    <script src="../../scripts/pacientes_analaura/cadastrar-pacientes_script.js"></script>
+
+</html>

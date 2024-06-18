@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Yaldevi:wght@200..700&display=swap');
+
+.principal__cadastrar-paciente__titulo {
+    font-family: "Yaldevi", sans-serif;
+    padding: 2% 0 2% 4%;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#cadastrar-paciente_formulario {
+    padding: 0 4% 0 4%;
+}
+
+.formulario__caixa-topicos__titulo {
+    font-family: "Yaldevi", sans-serif;
+    font-size: 25px;
+    margin-bottom: 1%;
+    font-weight: 500;
+}
+
+.cadastrar-paciente__formulario__legenda {
+    font-family: "Yaldevi", sans-serif;
+    font-size: 15px;
+}
+
+.cadastrar-paciente__formulario__campo {
+    width: 30%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+}
+

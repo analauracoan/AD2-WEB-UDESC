@@ -53,7 +53,11 @@ main {
     align-items: center;
 }
 
-.cabecalho__caixa-nome__nome {
+.cabecalho__caixa-nome__link {
+    text-decoration: none;
+}
+
+.cabecalho__caixa-nome__link__nome {
     font-family: "Yaldevi", sans-serif;
     color: var(--branco-principal);
     font-weight: 300;
