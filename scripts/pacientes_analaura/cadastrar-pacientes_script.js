@@ -1,4 +1,4 @@
-document.getElementById('cadastroForm').addEventListener('submit', function(event) {
+document.getElementById('cadastrar-paciente_formulario').addEventListener('submit', function(event) {
     event.preventDefault();
 
     if (!validarCampos()) {

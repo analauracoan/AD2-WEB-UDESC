@@ -56,11 +56,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 20%;
+    width: 12%;
 }
 
 .principal__listar-pacientes__card__botao {
-    width: 30%;
+    width: 45%;
     height: 100%;
     border-radius: 10px;
     display: flex;
