@@ -23,27 +23,27 @@
                 <nav class="cabecalho__caixa-nav__nav">
                     <ul class="cabecalho__caixa-nav__nav__lista">
                         <li class="cabecalho__caixa-nav__nav__lista__item">
-                            <a href="#" class="cabecalho__caixa-nav__nav__lista__item__link">
+                            <a href="../pacientes_analaura/cadastrar_paciente.html" class="cabecalho__caixa-nav__nav__lista__item__link">
                                 Pacientes
                             </a>
                         </li>
                         <li class="cabecalho__caixa-nav__nav__lista__item">
-                            <a href="#" class="cabecalho__caixa-nav__nav__lista__item__link">
+                            <a href="cadastrar_anamnese.html" class="cabecalho__caixa-nav__nav__lista__item__link">
                                 Anamneses
                             </a>
                         </li>
                         <li class="cabecalho__caixa-nav__nav__lista__item">
-                            <a href="#" class="cabecalho__caixa-nav__nav__lista__item__link">
+                            <a href="../tratamentos_samanta/cadastrar_tratamento.html" class="cabecalho__caixa-nav__nav__lista__item__link">
                                 Tratamentos
                             </a>
                         </li>
                         <li class="cabecalho__caixa-nav__nav__lista__item">
-                            <a href="#" class="cabecalho__caixa-nav__nav__lista__item__link">
+                            <a href="../servicos_carlos/cadastrar_servico.html" class="cabecalho__caixa-nav__nav__lista__item__link">
                                 Serviços
                             </a>
                         </li>
                         <li class="cabecalho__caixa-nav__nav__lista__item">
-                            <a href="#" class="cabecalho__caixa-nav__nav__lista__item__link">
+                            <a href="../usuarios_michel/cadastrar_usuario.html" class="cabecalho__caixa-nav__nav__lista__item__link">
                                 Usuários
                             </a>
                         </li>
@@ -59,12 +59,10 @@
             <nav class="sidebar__nav">
                 <ul class="sidebar__nav__lista">
                     <li class="sidebar__nav__lista__item">
-                         <a href="../anamneses_pablo/listagem_anamneses.html" class="sidebar__nav__lista__item__link">
-                            Listar anamneses
-                         </a>
+                         
                     </li>
                     <li class="sidebar__nav__lista__item">
-                        <a href="#" class="sidebar__nav__lista__item__link">
+                        <a href="cadastrar_anamnese.html" class="sidebar__nav__lista__item__link">
                            Cadastrar anamnese
                         </a>
                     </li>
@@ -78,6 +76,159 @@
             <!-- FAZER SEU CÓDIGO AQUI -->
             <!-- utilizar o arquivo cadastrar_anamnese.css para o CSS -->
 
+            
+            <div class="main-container">
+                <form id="anamneseForm" action="../anamnese/relatorio-anamnese.html" method="post">
+                    <fieldset>
+                        <legend>História clínica:</legend>
+                        <div class="form-grid">
+                            <div class="input-container">
+                                <label for="queixa">Queixa principal</label>
+                                <input type="text" name="queixa" id="queixa">
+                            </div>
+                            <div class="input-container">
+                                <label for="ultimotratamento">Último tratamento realizado</label>
+                                <input type="text" name="ultimotratamento" id="ultimotratamento">
+                            </div>
+                            <div class="input-container">
+                                <label for="dataultimotratamento">Data</label>
+                                <input type="date" name="dataultimotratamento" id="dataultimotratamento">
+                            </div>
+                            <div class="radio-container">
+                                <span>Concluído</span>
+                                <div>
+                                    <input type="radio" name="concluidoultimotratamento" id="simconcluidoultimotratamento" value="sim">
+                                    <label for="simconcluidoultimotratamento">Sim</label>
+                                    <input type="radio" name="concluidoultimotratamento" id="naoconcluidoultimotratamento" value="nao">
+                                    <label for="naoconcluidoultimotratamento">Não</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-grid">
+                            <div class="radio-container">
+                                <label>Está em tratamento médico</label>
+                                <div>
+                                    <input type="radio" name="tratamentomedico" id="simtratamentomedico" value="sim">
+                                    <label for="simtratamentomedico">Sim</label>
+                                    <input type="radio" name="tratamentomedico" id="naotratamentomedico" value="nao">
+                                    <label for="naotratamentomedico">Não</label>
+                                </div>
+                            </div>
+                            <div class="radio-container">
+                                <label>Toma algum medicamento</label>
+                                <div>
+                                    <input type="radio" name="medicamento" id="simmedicamento" value="sim">
+                                    <label for="simmedicamento">Sim</label>
+                                    <input type="radio" name="medicamento" id="naomedicamento" value="nao">
+                                    <label for="naomedicamento">Não</label>
+                                </div>
+                            </div>
+                            <div class="radio-container">
+                                <label>É diabético</label>
+                                <div>
+                                    <input type="radio" name="diabetico" id="simdiabetico" value="sim">
+                                    <label for="simdiabetico">Sim</label>
+                                    <input type="radio" name="diabetico" id="naodiabetico" value="nao">
+                                    <label for="naodiabetico">Não</label>
+                                </div>
+                            </div>
+                            <div class="radio-container">
+                                <label>É cardiopata</label>
+                                <div>
+                                    <input type="radio" name="cardiopata" id="simcardiopata" value="sim">
+                                    <label for="simcardiopata">Sim</label>
+                                    <input type="radio" name="cardiopata" id="naocardiopata" value="nao">
+                                    <label for="naocardiopata">Não</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-grid">
+                            <div class="radio-container">
+                                <label>É hipertenso</label>
+                                <div>
+                                    <input type="radio" name="hipertenso" id="simhipertenso" value="sim">
+                                    <label for="simhipertenso">Sim</label>
+                                    <input type="radio" name="hipertenso" id="naohipertenso" value="nao">
+                                    <label for="naohipertenso">Não</label>
+                                </div>
+                            </div>
+                            <div class="radio-container">
+                                <label>Apresenta histórico de hemorragia</label>
+                                <div>
+                                    <input type="radio" name="hemorragia" id="simhemorragia" value="sim">
+                                    <label for="simhemorragia">Sim</label>
+                                    <input type="radio" name="hemorragia" id="naohemorragia" value="nao">
+                                    <label for="naohemorragia">Não</label>
+                                </div>
+                            </div>
+                            <div class="radio-container">
+                                <label>É portador de doença infectocontagiosa</label>
+                                <div>
+                                    <input type="radio" name="infectocontagiosa" id="siminfectocontagiosa" value="sim">
+                                    <label for="siminfectocontagiosa">Sim</label>
+                                    <input type="radio" name="infectocontagiosa" id="naoinfectocontagiosa" value="nao">
+                                    <label for="naoinfectocontagiosa">Não</label>
+                                </div>
+                            </div>
+                            <div class="radio-container">
+                                <label>Alergia a medicamentos</label>
+                                <div>
+                                    <input type="radio" name="alergiamedicamento" id="simalergiamedicamento" value="sim">
+                                    <label for="simalergiamedicamento">Sim</label>
+                                    <input type="radio" name="alergiamedicamento" id="naoalergiamedicamento" value="nao">
+                                    <label for="naoalergiamedicamento">Não</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-grid">
+                            <div class="input-container">
+                                <label for="medicamentos">Medicamentos utilizados</label>
+                                <input type="text" name="medicamentos" id="medicamentos">
+                            </div>
+                            <div class="input-container">
+                                <label for="reacoes">Reações medicamentosas</label>
+                                <input type="text" name="reacoes" id="reacoes">
+                            </div>
+                            <div class="input-container">
+                                <label for="doencas">Doença(s) infecto-contagiosa(s)</label>
+                                <input type="text" name="doencas" id="doencas">
+                            </div>
+                        </div>
+                    </fieldset>
+        
+                    <fieldset>
+                        <legend>Assinatura:</legend>
+                        <div class="form-grid">
+                            <div class="input-container">
+                                <label for="outras">Outras informações</label>
+                                <input type="text" name="outras" id="outras">
+                            </div>
+                            <div class="input-container">
+                                <label>Declaro verdadeiras as informações acima em</label>
+                                <b>29/04/2024</b><br>
+                                <input type="text" name="assinatura" id="assinatura">
+                                <label for="assinatura">Assinatura do paciente ou responsável</label>
+                            </div>
+                        </div>
+                    </fieldset>
+        
+                    <div class="footer">
+                        <div class="footer-info">
+                            <p>Por Dra. Priscila Oliver</p>
+                            <p>Criado: 30/04/2024</p>
+                            <p>Alterado: 30/04/2024</p>
+                        </div>
+                        <div class="footer-buttons">
+                            <button type="button" onclick="saveAndPrint()">Salvar e Imprimir</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        
+            <script src="cadastrar-anamnese_script.js"></script>
+            
+
+            <!--fim do codigo da tabela-->
 
         </main>
 

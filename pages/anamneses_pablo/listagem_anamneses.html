@@ -23,27 +23,27 @@
                 <nav class="cabecalho__caixa-nav__nav">
                     <ul class="cabecalho__caixa-nav__nav__lista">
                         <li class="cabecalho__caixa-nav__nav__lista__item">
-                            <a href="#" class="cabecalho__caixa-nav__nav__lista__item__link">
+                            <a href="../pacientes_analaura/cadastrar_paciente.html" class="cabecalho__caixa-nav__nav__lista__item__link">
                                 Pacientes
                             </a>
                         </li>
                         <li class="cabecalho__caixa-nav__nav__lista__item">
-                            <a href="#" class="cabecalho__caixa-nav__nav__lista__item__link">
+                            <a href="../anamneses_pablo/cadastrar_anamnese.html" class="cabecalho__caixa-nav__nav__lista__item__link">
                                 Anamneses
                             </a>
                         </li>
                         <li class="cabecalho__caixa-nav__nav__lista__item">
-                            <a href="#" class="cabecalho__caixa-nav__nav__lista__item__link">
+                            <a href="../tratamentos_samanta/cadastrar_tratamento.html" class="cabecalho__caixa-nav__nav__lista__item__link">
                                 Tratamentos
                             </a>
                         </li>
                         <li class="cabecalho__caixa-nav__nav__lista__item">
-                            <a href="#" class="cabecalho__caixa-nav__nav__lista__item__link">
+                            <a href="../servicos_carlos/cadastrar_servico.html" class="cabecalho__caixa-nav__nav__lista__item__link">
                                 Serviços
                             </a>
                         </li>
                         <li class="cabecalho__caixa-nav__nav__lista__item">
-                            <a href="#" class="cabecalho__caixa-nav__nav__lista__item__link">
+                            <a href="../usuarios_michel/cadastrar_usuario.html" class="cabecalho__caixa-nav__nav__lista__item__link">
                                 Usuários
                             </a>
                         </li>
@@ -59,12 +59,10 @@
             <nav class="sidebar__nav">
                 <ul class="sidebar__nav__lista">
                     <li class="sidebar__nav__lista__item">
-                         <a href="../anamneses_pablo/listagem_anamneses.html" class="sidebar__nav__lista__item__link">
-                            Listar anamneses
-                         </a>
+                         
                     </li>
                     <li class="sidebar__nav__lista__item">
-                        <a href="#" class="sidebar__nav__lista__item__link">
+                        <a href="cadastrar_anamnese.html" class="sidebar__nav__lista__item__link">
                            Cadastrar anamnese
                         </a>
                     </li>
@@ -76,6 +74,98 @@
 
 
             <!-- FAZER SEU CÓDIGO AQUI -->
+
+
+            <div class="main-container">
+                <fieldset>
+                    <legend>História clínica:</legend>
+                    <div id="historiaClinica"></div>
+                </fieldset>
+                <fieldset>
+                    <legend>Assinatura:</legend>
+                    <div id="assinatura"></div>
+                </fieldset>
+                <div class="footer no-print">
+                    <button onclick="window.print()">Imprimir</button>
+                </div>
+            </div>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    let data = JSON.parse(localStorage.getItem('anamneseData'));
+                    if (data) {
+                        let historiaClinica = `
+                            <div class="form-grid">
+                                <div class="input-container">
+                                    <label>Queixa principal: ${data.queixa}</label>
+                                </div>
+                                <div class="input-container">
+                                    <label>Último tratamento realizado: ${data.ultimotratamento}</label>
+                                </div>
+                                <div class="input-container">
+                                    <label>Data: ${data.dataultimotratamento}</label>
+                                </div>
+                                <div class="radio-container">
+                                    <label>Concluído: ${data.concluidoultimotratamento === 'sim' ? 'Sim' : 'Não'}</label>
+                                </div>
+                                <div class="radio-container">
+                                    <label>Está em tratamento médico: ${data.tratamentomedico === 'sim' ? 'Sim' : 'Não'}</label>
+                                </div>
+                                <div class="radio-container">
+                                    <label>Toma algum medicamento: ${data.medicamento === 'sim' ? 'Sim' : 'Não'}</label>
+                                </div>
+                                <div class="radio-container">
+                                    <label>É diabético: ${data.diabetico === 'sim' ? 'Sim' : 'Não'}</label>
+                                </div>
+                                <div class="radio-container">
+                                    <label>É cardiopata: ${data.cardiopata === 'sim' ? 'Sim' : 'Não'}</label>
+                                </div>
+                                <div class="radio-container">
+                                    <label>É hipertenso: ${data.hipertenso === 'sim' ? 'Sim' : 'Não'}</label>
+                                </div>
+                                <div class="radio-container">
+                                    <label>Apresenta histórico de hemorragia: ${data.hemorragia === 'sim' ? 'Sim' : 'Não'}</label>
+                                </div>
+                                <div class="radio-container">
+                                    <label>É portador de doença infectocontagiosa: ${data.infectocontagiosa === 'sim' ? 'Sim' : 'Não'}</label>
+                                </div>
+                                <div class="radio-container">
+                                    <label>Alergia a medicamentos: ${data.alergiamedicamento === 'sim' ? 'Sim' : 'Não'}</label>
+                                </div>
+                                <div class="input-container">
+                                    <label>Medicamentos utilizados: ${data.medicamentos}</label>
+                                </div>
+                                <div class="input-container">
+                                    <label>Reações medicamentosas: ${data.reacoes}</label>
+                                </div>
+                                <div class="input-container">
+                                    <label>Doença(s) infecto-contagiosa(s): ${data.doencas}</label>
+                                </div>
+                            </div>
+                        `;
+                        let assinatura = `
+                            <div class="form-grid">
+                                <div class="input-container">
+                                    <label>Outras informações: ${data.outras}</label>
+                                </div>
+                                <div class="input-container">
+                                    <label>Declaro verdadeiras as informações acima em: 29/04/2024</label><br>
+                                    <label>Assinatura do paciente ou responsável: ${data.assinatura}</label>
+                                </div>
+                            </div>
+                        `;
+
+                        document.getElementById('historiaClinica').innerHTML = historiaClinica;
+                        document.getElementById('assinatura').innerHTML = assinatura;
+                    } else {
+                        document.body.innerHTML = '<p>Nenhum dado encontrado para exibição.</p>';
+                    }
+                });
+            </script>
+
+
+
+
             <!-- utilizar o arquivo listagem_anamneses.css para o CSS -->
 
 
