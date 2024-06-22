@@ -1,0 +1,76 @@
+.main-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+form legend {
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.input-container,
+.radio-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container label,
+.radio-container label {
+    margin-bottom: 5px;
+}
+
+.input-container input,
+.radio-container input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.radio-container div {
+    display: flex;
+    gap: 10px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.footer-info p {
+    margin: 0;
+}
+
+.footer-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-buttons a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.footer-buttons span {
+    margin-left: 5px;
+}
