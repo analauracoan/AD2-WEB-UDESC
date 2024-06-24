@@ -2,14 +2,12 @@
 
 .principal__cadastrar-paciente__titulo {
     font-family: "Yaldevi", sans-serif;
-    padding: 0 0 2% 4%;
     font-size: 40px;
     font-weight: 600;
 }
 
 #cadastrar-paciente_formulario {
     width: 100%;
-    padding: 0 4% 0 4%;
 }
 
 .cadastrar-paciente__formulario__caixa-topicos__titulo {

@@ -125,6 +125,7 @@ main {
 
 .principal {
     background-color: var(--cor-de-fundo);
+    padding: 3%;
 }
 
 
