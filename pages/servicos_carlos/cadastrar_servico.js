@@ -20,27 +20,27 @@
                 <nav class="cabecalho__caixa-nav__nav">
                     <ul class="cabecalho__caixa-nav__nav__lista">
                         <li class="cabecalho__caixa-nav__nav__lista__item">
-                            <a href="../pacientes_analaura/listagem_pacientes.html" class="cabecalho__caixa-nav__nav__lista__item__link">
+                            <a href="#" class="cabecalho__caixa-nav__nav__lista__item__link">
                                 Pacientes
                             </a>
                         </li>
                         <li class="cabecalho__caixa-nav__nav__lista__item">
-                            <a href="../anamneses_pablo/listagem_anamneses.html" class="cabecalho__caixa-nav__nav__lista__item__link">
+                            <a href="#" class="cabecalho__caixa-nav__nav__lista__item__link">
                                 Anamneses
                             </a>
                         </li>
                         <li class="cabecalho__caixa-nav__nav__lista__item">
-                            <a href="../tratamentos_samanta/listagem_tratamentos.html" class="cabecalho__caixa-nav__nav__lista__item__link">
+                            <a href="#" class="cabecalho__caixa-nav__nav__lista__item__link">
                                 Tratamentos
                             </a>
                         </li>
                         <li class="cabecalho__caixa-nav__nav__lista__item">
-                            <a href="../servicos_carlos/listagem_servicos.html" class="cabecalho__caixa-nav__nav__lista__item__link">
+                            <a href="#" class="cabecalho__caixa-nav__nav__lista__item__link">
                                 Serviços
                             </a>
                         </li>
                         <li class="cabecalho__caixa-nav__nav__lista__item">
-                            <a href="../usuarios_michel/listagem_usuarios.html" class="cabecalho__caixa-nav__nav__lista__item__link">
+                            <a href="#" class="cabecalho__caixa-nav__nav__lista__item__link">
                                 Usuários
                             </a>
                         </li>
@@ -55,13 +55,13 @@
             <nav class="sidebar__nav">
                 <ul class="sidebar__nav__lista">
                     <li class="sidebar__nav__lista__item">
-                      <a href="../servicos_carlos/listagem_servicos.html" class="sidebar__nav__lista__item__link">
-                          Listar serviços
-                      </a>
+        <a href="#" class="sidebar__nav__lista__item__link">
+                            Listar serviços
+        </a>
                     </li>
                     <li class="sidebar__nav__lista__item">
                         <a href="#" class="sidebar__nav__lista__item__link">
-                          Cadastrar serviço
+            Cadastrar serviço
                         </a>
                     </li>
                 </ul>

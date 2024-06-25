@@ -1,88 +1,234 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
-    <head>
-        <title>Consultório</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width-device-width, initial-scale=1">
-        <link rel="stylesheet" href="../../css/general.css">
-        <link rel="stylesheet" href="../../css/usuarios_michel/listagem_usuarios.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Usuários</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
 
-    <body>
+        #menu-lateral {
+            width: 190px;
+            background-color: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid #ddd;
+        }
 
-        <header class="cabecalho">
-            <div class="cabecalho__caixa-nome">
-                <a href="../../index.html" class="cabecalho__caixa-nome__link">
-                    <h4 class="cabecalho__caixa-nome__link__nome">
-                        Consultório <b>Priscila Oliver</b>
-                    </h4>
-                </a>
-            </div>
-            <div class="cabecalho__caixa-nav">
-                <nav class="cabecalho__caixa-nav__nav">
-                    <ul class="cabecalho__caixa-nav__nav__lista">
-                        <li class="cabecalho__caixa-nav__nav__lista__item">
-                            <a href="#" class="cabecalho__caixa-nav__nav__lista__item__link">
-                                Pacientes
-                            </a>
-                        </li>
-                        <li class="cabecalho__caixa-nav__nav__lista__item">
-                            <a href="#" class="cabecalho__caixa-nav__nav__lista__item__link">
-                                Anamneses
-                            </a>
-                        </li>
-                        <li class="cabecalho__caixa-nav__nav__lista__item">
-                            <a href="#" class="cabecalho__caixa-nav__nav__lista__item__link">
-                                Tratamentos
-                            </a>
-                        </li>
-                        <li class="cabecalho__caixa-nav__nav__lista__item">
-                            <a href="#" class="cabecalho__caixa-nav__nav__lista__item__link">
-                                Serviços
-                            </a>
-                        </li>
-                        <li class="cabecalho__caixa-nav__nav__lista__item">
-                            <a href="#" class="cabecalho__caixa-nav__nav__lista__item__link">
-                                Usuários
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+        #consultorio {
+            background-color: #1B264F;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
 
-        <aside class="sidebar">
-            <p class="sidebar__caminho">
-                Home > Listar usuários
-            </p>
-            <nav class="sidebar__nav">
-                <ul class="sidebar__nav__lista">
-                    <li class="sidebar__nav__lista__item">
-                         <a href="#" class="sidebar__nav__lista__item__link">
-                            Listar usuários
-                         </a>
-                    </li>
-                    <li class="sidebar__nav__lista__item">
-                        <a href="../usuarios_michel/cadastrar_usuario.html" class="sidebar__nav__lista__item__link">
-                           Cadastrar usuário
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
+        #menu-links, #dados-links {
+            height: 65px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-        <main class="principal">
+        #menu-links {
+            background-color: #576CAB;
+        }
 
+        #dados-links {
+            background-color: white;
+        }
 
-            <!-- FAZER SEU CÓDIGO AQUI -->
-            <!-- utilizar o arquivo listagem_usuarios.css para o CSS -->
+        #menu-links a, #dados-links a {
+            font-size: 16px;
+            color: white;
+            text-decoration: none;
+        }
 
+        #dados-links a {
+            color: black;
+        }
 
-        </main>
+        #card {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: gray;
+        }
 
-        <footer></footer>
+        #card-paciente {
+            background-color: white;
+            width: 100%;
+            height: 100%;
+        }
 
-    </body>
+        #conteudo {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #menu-superior {
+            background-color: #576CAB;
+            height: 60px;
+            display: flex;
+        }
+
+        #menu-superior div {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #menu-superior div a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        #menu-superior .active {
+            background-color: #1B264F;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #576CAB;
+            color: white;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .button-container {
+            text-align: right;
+            margin: 10px;
+        }
+
+        .button-container button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #576CAB;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button-container button:hover {
+            background-color: #1B264F;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="menu-lateral">
+        <div id="consultorio">Consultório Priscila Oliver</div>
+        <div id="menu-links"><a href="#">Relatório de Usuários</a></div>
+        <div id="dados-links"><a href="../usuarios_michel/cadastrar_usuario.html">Cadastro de Usuários</a></div>
+        <div id="card">
+            <div id="card-paciente"></div>
+        </div>
+    </div>
+
+    <div id="conteudo">
+        <div id="menu-superior">
+            <div><a href="Ultimos_Acessos-Odonto_Agil.html">Agenda</a></div>
+            <div class="active"><a href="Criar_Anamnese-Odonto_Agil.html">Pacientes</a></div>
+            <div><a href="Form-Criar_Anamnese-Odonto_Agil.html">Serviços</a></div>
+            <div><a href="Form2-Criar_Anamnese-Odonto_Agil.html">Estoque</a></div>
+            <div></div>
+        </div>
+
+        <div class="button-container">
+            <button onclick="imprimirRelatorio()">Imprimir Relatório</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>CPF</th>
+                    <th>Email</th>
+                    <th>Idade</th>
+                    <th>Sexo</th>
+                    <th>Endereço</th>
+                    <th>Nível de Acesso</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>123.456.789-01</td>
+                    <td>usuario1@example.com</td>
+                    <td>30</td>
+                    <td>Masculino</td>
+                    <td>Rua A, 123</td>
+                    <td>Admin</td>
+                </tr>
+                <tr>
+                    <td>987.654.321-09</td>
+                    <td>usuario2@example.com</td>
+                    <td>25</td>
+                    <td>Feminino</td>
+                    <td>Rua B, 456</td>
+                    <td>User</td>
+                </tr>
+                <tr>
+                    <td>456.789.012-34</td>
+                    <td>usuario3@example.com</td>
+                    <td>40</td>
+                    <td>Masculino</td>
+                    <td>Rua C, 789</td>
+                    <td>Admin</td>
+                </tr>
+                <tr>
+                    <td>567.890.123-45</td>
+                    <td>usuario4@example.com</td>
+                    <td>35</td>
+                    <td>Feminino</td>
+                    <td>Rua D, 012</td>
+                    <td>User</td>
+                </tr>
+                <tr>
+                    <td>234.567.890-12</td>
+                    <td>usuario5@example.com</td>
+                    <td>28</td>
+                    <td>Outro</td>
+                    <td>Rua E, 345</td>
+                    <td>User</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        function imprimirRelatorio() {
+            window.print();
+        }
+    </script>
+
+</body>
 
 </html>
