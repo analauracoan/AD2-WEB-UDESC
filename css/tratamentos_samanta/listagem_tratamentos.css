@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho__caixa-nome {
+    font-size: 1.5rem;
+}
+
+.cabecalho__caixa-nav {
+    text-align: right;
+}
+
+.cabecalho__caixa-nav__nav__lista {
+    list-style-type: none;
+}
+
+.cabecalho__caixa-nav__nav__lista__item {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.cabecalho__caixa-nav__nav__lista__item__link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.cabecalho__caixa-nav__nav__lista__item__link:hover {
+    color: #cceeff;
+}
+
+.sidebar {
+    background-color: #343a40;
+    color: white;
+    width: 250px;
+    padding: 20px;
+}
+
+.sidebar__caminho {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.sidebar__nav__lista {
+    list-style-type: none;
+}
+
+.sidebar__nav__lista__item {
+    margin-bottom: 10px;
+}
+
+.sidebar__nav__lista__item__link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.sidebar__nav__lista__item__link:hover {
+    color: #cceeff;
+}
+
+.principal {
+    padding: 20px;
+}
+
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
