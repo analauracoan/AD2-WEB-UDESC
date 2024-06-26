@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+}
+
+.cabecalho {
+    background-color: #0044cc;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho__caixa-nome {
+    margin-right: auto;
+}
+
+.cabecalho__caixa-nome__link {
+    text-decoration: none;
+    color: white;
+}
+
+.cabecalho__caixa-nome__link__nome {
+    margin: 0;
+}
+
+.cabecalho__caixa-nome__link__nome b {
+    font-weight: bold;
+}
+
+.cabecalho__caixa-nav__nav {
+    display: flex;
+}
+
+.cabecalho__caixa-nav__nav__lista {
+    list-style-type: none;
+    display: flex;
+}
+
+.cabecalho__caixa-nav__nav__lista__item {
+    margin-left: 1rem;
+}
+
+.cabecalho__caixa-nav__nav__lista__item__link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.sidebar {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.sidebar__caminho {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.sidebar__nav__lista {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar__nav__lista__item {
+    margin-bottom: 0.5rem;
+}
+
+.sidebar__nav__lista__item__link {
+    text-decoration: none;
+    color: #0044cc;
+    font-weight: bold;
+}
+
+.principal {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-cadastrar-tratamento {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input, .form-group textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #0044cc;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
